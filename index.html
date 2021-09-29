@@ -1,0 +1,101 @@
+<!DOCTYPE html>  <!--it is very important and tells the browser it's looking at an html file -->
+
+<html>
+
+<head><!-- head is where the extra information goes it does not show on the screen but it is essential in getting thongs to work properly -->
+  <meta charset="utf-8"> <!-- tells the browser what character set (or kinda like what type of alphabet)you are using for the page-->
+  <title>My First Website</title> <!--this shows up in the tab; it is the title that shows up in the google search -->
+</head>
+
+<body><!-- body is where all the information goes. everything you want to show up on the screen goes here -->
+  <p>my first paragraph</p>
+
+  <p>second paragraph</p>
+
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <h1>For making a webpage lesson, <h1><a href="lessons.html">click here </a></h1>
+  <h1> Bold and Italic Text</h1>
+
+  <!-- <em> </em> is for making text italic -->
+  <!-- <strong> </strong> is for making text bold -->
+  <!-- combining both will make bold italic -->
+  <!-- <b> </b> and <i> </i> (bold and italic respectively) does the same visually in making texts bold and italic.
+  the difference is, with web design, we have to give emphasis to texts for accessibility (such as word search in google or text readers)
+  <b> and <i> will give the same effect to the text visually but it does not give emphasis to the words itself; it does not give it meaning.
+  i.e. it is better to use <strong> and <em> in making bold and italic texts for emphasis -->
+
+  <!-- <a> </a> is the tag for making textes a hyperlink text. you have to add an href with th elink for it to work.
+  the link must have http:// because of it doesn't it wont work because it will just try to find a google.com file in your folder and not go to the actual website -->
+  <!-- in the pagetwo.html <a> tag (anchor tag), it didn't try to go to a website because it does not have an http:// in front. so we can say that if you put an http:// in front
+  of links for href, it will try to find the link of a website, if without it, it will just try to search in your folder for a file with that name-->
+
+  <p><strong><em>Lorem ipsum dolor sit amet.</em></strong>
+  Est doloribus expedita ut sunt quia eos totam dolores
+  est voluptatibus error quo enim facilis eos sequi molestiae?
+  <em>Et internos laborum est harum impedit At placeat internos
+  eos voluptatem recusandae!</em> Vel fugiat dolorem ab porro
+  temporibus et ducimus nobis et soluta animi qui
+  earum omnis. <a href="pagetwo.html">Page two</a> voluptas ab
+  nobis quidem id quisquam unde ut earum rerum ut commodi voluptate
+  ex <a href="http://www.google.com">ratione accusamus</a> aut
+  provident mollitia.</p>
+
+  <!--in putting the image in you webpage is kinda like linking sites. you have to put the image's web address in the src (source) -->
+  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg?crop=1.00xw:0.752xh;0,0.0601xh&resize=768:*"
+  alt="a beautiful sunset by the beach">
+  <img src="img/hamster.png" alt="cute hamster cartoon that is standing up. it is partly orange and has pink cheek blush.">
+  <!-- with image sources, if you put the wrong link or file name, it will show up as the broken image icon in your webpage -->
+  <!-- the text you put in alt (alternative) attribute is the text that shows up when the image did not load because of wrong link that was put in the src or bad internet connection.
+  it's also for people who uses text reader for those with vision impairment. text or screen readers reads the text in a page and when it gets to the image, it will read the alt text.
+  sometime's it is also used by people to cheat systems a little bit for search engine optimization, but if you are doing it correctly, alt should be a description of the image
+  that's supposed to be there -->
+  <!-- earlier, the src for the hamster pic is "hamster.png" but I made subfolders adn has since then put the hamster pic in the img subfolder. because of that, when it tries to find
+  the hamster.png in the First Website folder it finds nothing. but if you put img/ in front, it will tell it that in the First Website folder, go to img folder then take hamster.png.
+  that's why it became img/hamster.png ; that is it's path. -->
+
+  <p>Et temporibus dignissimos ut doloribus dolorum sed
+  voluptate deserunt. <strong>Et perspiciatis omnis aut unde
+  culpa est sunt excepturi et nostrum ipsam ea tempore
+  iure ut voluptate facilis At delectus unde.</strong> Eos
+  minima dolores sed commodi fuga et repellendus minima.
+  Quo odit temporibus in autem eligendi eum dolor rerum
+  aut cupiditate culpa.</p>
+
+  <!-- POINTERS FOR FOLDER, NAMING STUFF, DO'S AND DONT'S
+  1. in your main website folder (which is First Website for this one), create subfolders to make it clean and not confusing
+  i.e. img folder for all images, css folder for css files, js folder for javascript files
+
+  2. in naming folders and files, it is better if it is:
+    ==a. all lowercase
+    ==b. simple
+    ==c. no numbers
+    ==d. short
+    ==e. one word with no spaces (if you really need to make it two words or you need spaces, use hyphen (-) instead)
+
+    why?
+    a. to avoid confusions when linking it. also, it is easier.
+    for e.g. for index.html, it is better if all lowercase instead of Index.html because it might work now in your pc but it might not or there might have some problems when it has to go to the cloud or browser.
+
+    b. to avoid confusion.
+    c. to avoid confusion. it's better with all words so there are no complications when it is uploaded to the webpage
+    d. it is easier and less letters when linking it
+
+    e. e.g. in the pagetwo.html if you make it's name into  page two.html, when you open the link, the url at the end will look like this "page%20two.html". the %20 is the symbol for space.
+    it's not good when you are trying to optimize it's searchability of your webpage for search engines.
+    if without a space this is what it looks like "pagetwo.html". simple.
+
+  3. Another reason why your homepage should be named index.html and not any other is because when a user opens your link, the browser will find index.html in your files and show it as your hompage. if you
+  name it any different there might be problems so it's better to name it index.html
+
+  -->
+
+
+
+</body>
+</html>
