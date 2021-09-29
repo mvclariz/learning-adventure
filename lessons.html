@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> Webpage Making </title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1> HTML </h1>
+
+    <h2>HTML Boilerplate</h2>
+      <p>It is the basic structure or boilerplate that needs to be set up before anything
+        useful can be done</p>
+
+
+      <h3> DOCTYPE </h3>
+        <p>It is very important and tells the browser it's looking at an html file.
+          It also informs the browser what version of HTML it should use to render the
+          document.</p>
+        <p> &lt;!DOCTYPE html&gt; </p>
+
+      <h3> HTML Tag </h3>
+        <p>This is the root element of the document. Meaning that every other element of the
+          document is a descendant of it.</p>
+
+        <p> &lt;html&gt; &lt;/html&gt;</p>
+
+      <h3> Head Element </h3>
+        <p>Head is where the extra information goes it does not show on the screen but it is
+          essential in getting things to work properly.</p>
+        <p> &lt;head&gt; &lt;/head&gt; </p>
+
+          <h4>Title Element</h4>
+            <p>This shows up in the tab; it is the title that shows up in the google search.
+              It is always put as a descendant/child of the head element.</p>
+            <p> &lt;title&gt; I am a title that will show in the browser tab. &lt;/title&gt; </p>
+
+          <h4>Charset Meta Element</h4>
+            <p>Tells the browser what character set (or kinda like what type of alphabet)
+              you are using for the page. It is also always put as a descendant/child
+              of the head element. </p>
+            <p> &lt;meta charset="utf-8"&gt; </p>
+
+      <h3> Body Element </h3>
+        <p>Body is where all the information goes. Everything you want to show up on the screen
+          or your page goes here.
+        <p> &lt;body&gt; &lt;/body&gt; </p>
+
+
+    <h2>HTML Texts</h2>
+
+
+      <h3> Paragraphs </h3>
+        <p>Paragraphs has &lt;p&gt; and &lt;/p&gt; as opening and closing tags, respectively.</p>
+        <p>If you want to make two paragraphs, you have to put each paragraphs in separate tags
+          with their own opening and closing paragraph tags.</p>
+        <p>Example:</p>
+        <p> &lt;p&gt; This is my first paragraph. &lt;/p&gt; </p>
+        <p> &lt;p&gt; This is my second paragraph. &lt;/p&gt; </p>
+        <p>Which will render in your page as:</p>
+        <p>This is my first paragraph.</p>
+        <p>This is my second paragraph.</p>
+        <p>Instead of: </p>
+        <p>This is my first paragraph.This is my second paragraph.</p>
+        <p>When you code it under one paragraph tag pair.</p>
+        <p> i.e.</p>
+        <p> &lt;p&gt; This is my first paragraph.  </p>
+        <p> This is my second paragraph. &lt;/p&gt; </p>
+
+      <h3> Headings </h3>
+        <p>Headings are different than texts in HTML. Headings are written in bold with different
+          sizes.</p>
+        <p>There are six different headings that varies in importance. h1 is the highest level
+          and is therefore the biggest and has higher importance. h6 is the lowest level which is
+          therefore the smallest in the headings.</p>
+
+          <h1>&lt;h1&gt; Heading 1 &lt;/h1&gt;</h1>
+          <h2>&lt;h2&gt; Heading 2 &lt;/h2&gt;</h2>
+          <h3>&lt;h3&gt; Heading 3 &lt;/h3&gt;</h3>
+          <h4>&lt;h4&gt; Heading 4 &lt;/h4&gt;</h4>
+          <h5>&lt;h5&gt; Heading 5 &lt;/h5&gt;</h5>
+          <h6>&lt;h6&gt; Heading 6 &lt;/h6&gt;</h6>
+
+      <h3> Strong Element </h3>
+        <p>It is used for making texts bold. </p>
+        <p>Sometimes, when googling how to make texts bold in html, you might see answers
+          to use &lt;b&gt; &lt;/b&gt;. It does make texts bold visually, the difference is,
+          with web design, we have to give emphasis or importance to some texts for
+          accessibility (such as word search in google or text/screen readers)
+          &lt;b&gt; &lt;/b&gt; will give the same effect to the text visually but for
+          visually impaired who uses text readers, the text reader will just read it the
+          same way it reads other texts. With &lt;strong&gt;; the tone of voice on the
+          screen reader will change to communicate the importance of the text. </p>
+        <p>&lt;strong&gt; <strong>We are texts wrapped in strong tags to make us bold.</strong>
+          &lt;/strong&gt; </p>
+
+      <h3> Emphasis Element </h3>
+        <p>It is used for making texts italic. </p>
+        <p>Just like with strong element, sometimes, when googling how to make texts italic
+          in html, you will see a different answer which is to use &lt;i&gt; &lt;/i&gt;
+          to make the texts visually italic. But as with the strong element,
+          it is better to use the emphasis element instead of its shorter counterpart to give
+          the highlighted text the importance it needs and for the screen reader to communicate
+          it properly to those who uses it.
+        <p>&lt;em&gt; <em>We are texts wrapped in emphasis tags to make us italic.</em>
+          &lt;/em&gt; </p>
+
+        <p> &lt;strong&gt; &lt;em&gt; <strong><em> We are italicized bold texts made by
+         the combination of strong and emphasis element </em></strong> &lt;/em&gt;
+         &lt;/strong&gt; </p>
+
+      <h3> Nesting and Indentation </h3>
+        <p>We need to indent any elements that are within other elements. This is known
+          as nesting elements.</p>
+        <p>When we nest elements within other elements, we create a parent and child
+          relationship between them. The nested elements are the children and the element
+          they are nested within is the parent.</p>
+        <p>For example in the following example the body element is the parent and the
+          paragraph is the child.</p>
+          <p style="margin-left: 10px">&lt;html&gt;</p>
+            <p style="margin-left: 30px"> &lt;head&gt;</p>
+            <p style="margin-left: 30px"> &lt;/head&gt;</p>
+            <p style="margin-left: 30px"> &lt;body&gt;</p>
+              <p style="margin-left: 50px">   &lt;p&gt; We are an example. &lt;/p&gt;</p>
+            <p style="margin-left: 30px"> &lt;/body&gt;</p>
+          <p style="margin-left: 10px">&lt;/html&gt;</p>
+
+      <h3> HTML Comments </h3>
+        <p>Comments are not visible to the browser.</p>
+        <p> &lt;!-- and --&gt; </>
+
+
+    <h2> Lists </h2>
+
+
+      <h3> Unordered Lists </h3>
+        <p>When you need a list of items but the order does not matter.</p>
+        <p>Unordered lists are created using &lt;ul&gt; element and each item within the list
+          is created using &lt;li&gt;.</p>
+        <p>In an unordered list, each item starts with a bullet point.</p>
+        <p>In code:</p>
+          <p style="margin-left: 30px"> &lt;ul&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 1 &lt;/li&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 2 &lt;/li&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 3 &lt;/li&gt;</p>
+          <p style="margin-left: 30px"> &lt;/ul&gt;</p>
+        <p>In browser:</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+
+      <h3> Ordered Lists </h3>
+        <p>Used when the order of the list of items does matter.</p>
+        <p>Unordered lists are created using &lt;ol&gt; element and each item within the list
+          is created using &lt;li&gt;. However, each item starts with a number.</p>
+        <p>In code:</p>
+          <p style="margin-left: 30px"> &lt;ol&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 1 &lt;/li&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 2 &lt;/li&gt;</p>
+            <p style="margin-left: 50px">   &lt;li&gt; Item 3 &lt;/li&gt;</p>
+          <p style="margin-left: 30px"> &lt;/ol&gt;</p>
+        <p>In browser:</p>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+
+
+    <h2> Links and Images </h2>
+
+
+      <h3> Anchor Elements </h3>
+        <p>Is the tag used for making texts a hyperlink text. It does not work by itself, though.
+          You have to add an href with the link for it to work.</p>
+        <p>If you are going to anchor an external link, you will have to put http:// in front
+          of the link, otherwise, when you clink the hypertext, it will just think that the link
+          is a name of an html file that exists in you main website's folder.</p>
+        <p>It’s worth noting you can use anchor tags link to any kind of resource on the internet,
+          not just other HTML documents. You can link to videos, pdf files, images, and so on,
+          but for the most part, you will be linking to other HTML documents.
+        <p> &lt;a&gt; &lt;/g&gt; </p>
+
+        <p>Examples:</p>
+
+          <p>In code:</p>
+            <p> &lt;a href="http://www.google.com"&gt; click me to google &lt;/a&gt; </p>
+          <p>In browser:</p>
+            <a href="http://www.google.com">click me to google</a>
+
+          <p>In code:</p>
+            <p> &lt;a href="index.html"&gt; click me to go home &lt;/a&gt; </p>
+          <p>In browser:</p>
+            <a href="index.html">click me to go home</a>
+
+        <p>In the first example, when you click the hyperlinked text "click me  to google",
+          it will take you to the homepage of google. In the second example, when you click
+          "click me to go home", it will take you to the homepage of this site.</p>
+        <p>This is the difference when linking an external link and a file within your folder,
+          In the first one, since it is an external link, putting http:// in front of the url
+          is essential  because if you dont, the browser will think you are trying to link a
+          file within your site folder named www.google.com and try to find it there instead
+          of the famous search engine google. </p>
+
+      <h3> Absolute and Relative Links </h3>
+        <p>Generally, there are two kinds of links we will create:</p>
+        <ol>
+          <li>Links to pages on other websites on the internet.</li>
+          <li>Links to pages located on our own websites.</li>
+        </ol>
+
+          <h4>Absolute Links</h4>
+            <p>Links to pages on other websites on the internet are called absolute links.
+              A typical absolute link will be made up of the following parts:</p>
+            <p>protocol://domain/path</p>
+            <p>An absolute link will always contain the protocol and domain of the
+              destination.</p>
+            <p>The hyperlink created earlier under anchor elements topic which leads to the
+              homepage of google is an example of absolute link. It contains the protocol
+              (https:// (?)) and domain (www.google.com).</p>
+
+          <h4>Relative Links</h4>
+            <p>Links to other pages within our own website are called relative links.
+              Relative links do not include the domain name, since it is another page on
+              the same site, it assumes the domain name will be the same as the page we
+              created the link on.
+              Relative links only include the file path to the other page, relative to the
+              page you are creating the link on.</p>
+            <p>The previous example where the hyperlink text leads to the homepage is an
+              example of a relative link. The homepage is just within this site and the
+              index.html file which it is in is in the same folder that this filecode is in.</p>
+
+      <h3> Images </h3>
+        <p>Putting an image in your webpage is kinda like linking sites; you have to put the
+          image's web address in the src (source).</p>
+        <p>With image sources, if you put the wrong link or file name, it will show up as the
+          broken image icon in your webpage.</p>
+        <p>The text you put in alt (alternative) attribute is the text that shows up when the
+          image did not load because of wrong link that was put in the src or bad internet
+          connection. It's also for people who uses text reader for those with vision
+          impairment. Text or screen readers reads the text in a page and when it gets to the
+          image, it will read the alt text. Sometime's it is also used by people to cheat
+          systems a little bit for search engine optimization, but if you are doing it correctly,
+          alt should be a description of the image you are linking.</p>
+
+        <p>Examples:</p>
+          <p>In code:</p>
+            <p> &lt;img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg?crop=1.00xw:0.752xh;0,0.0601xh&resize=768:*"
+              alt="a beautiful sunset by the beach"&gt; </p>
+          <p>In browser:</p>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg?crop=1.00xw:0.752xh;0,0.0601xh&resize=768:*"
+              alt="a beautiful sunset by the beach">
+
+          <p>In code:</p>
+            <p> &lt;img src="img/hamster.png" alt="cute hamster cartoon that is standing up.
+              it is partly orange and has pink cheek blush."&gt; </p>
+          <p>In browser:</p>
+            <img src="img/hamster.png" alt="cute hamster
+              cartoon that is standing up. it is partly orange and has pink cheek blush.">
+
+        <p>The first one is an image that has an absolute link. The second one, which is a 
+          hamster, is an example of a relative link.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
